@@ -3908,7 +3908,6 @@ input, select, textarea {
 		#research {
 			background-color: #303030;
 		}
-		}
 		/* Center skills inside each box */
 .features section {
     display: flex;
@@ -3927,3 +3926,5 @@ input, select, textarea {
 .features section h3 {
     margin: 0;
 }
+		}
+		
