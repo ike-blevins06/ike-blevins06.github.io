@@ -3909,3 +3909,21 @@ input, select, textarea {
 			background-color: #303030;
 		}
 		}
+		/* Center skills inside each box */
+.features section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 3rem 2rem;
+}
+
+.features section .icon {
+    position: static;
+    margin: 0;
+    flex-shrink: 0;
+}
+
+.features section h3 {
+    margin: 0;
+}
