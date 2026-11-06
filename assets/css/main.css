@@ -3905,5 +3905,7 @@ input, select, textarea {
 			#intro {
 				background-attachment: scroll;
 			}
-
+		#research {
+			background-color: #303030;
+		}
 		}
