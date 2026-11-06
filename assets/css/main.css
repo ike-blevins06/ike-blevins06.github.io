@@ -3910,13 +3910,20 @@ input, select, textarea {
     }
 }
 
-/* Center skills inside each box */
+/* Skills layout */
+.features {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .features section {
+    width: 100%;
+    min-width: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1.5rem;
-    padding: 3rem 2rem;
+    gap: 1rem;
+    padding: 2.5rem 1rem;
 }
 
 .features section .icon {
@@ -3929,14 +3936,15 @@ input, select, textarea {
     margin: 0;
 }
 
-.features section {
-    width: 33.333%;
+/* Hide skill descriptions */
+.features section p {
+    display: none;
 }
 
-/* Reset the original two-column borders */
+/* Three-column borders */
 .features section:nth-child(n) {
-    border-left: 0;
-    border-top: solid 1px rgba(255, 255, 255, 0.15);
+    border: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .features section:nth-child(-n + 3) {
@@ -3944,18 +3952,17 @@ input, select, textarea {
 }
 
 .features section:not(:nth-child(3n + 1)) {
-    border-left: solid 1px rgba(255, 255, 255, 0.15);
+    border-left: 1px solid rgba(255, 255, 255, 0.15);
 }
 
-/* Stack skills on smaller screens */
 @media screen and (max-width: 736px) {
-    .features section {
-        width: 100%;
+    .features {
+        grid-template-columns: 1fr;
     }
 
     .features section:nth-child(n) {
         border-left: 0;
-        border-top: solid 1px rgba(255, 255, 255, 0.15);
+        border-top: 1px solid rgba(255, 255, 255, 0.15);
     }
 
     .features section:first-child {
