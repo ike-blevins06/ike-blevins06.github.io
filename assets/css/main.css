@@ -3928,3 +3928,36 @@ input, select, textarea {
 .features section h3 {
     margin: 0;
 }
+.features section {
+    width: 33.333%;
+}
+
+/* Reset the original two-column borders */
+.features section:nth-child(n) {
+    border-left: 0;
+    border-top: solid 1px rgba(255, 255, 255, 0.15);
+}
+
+.features section:nth-child(-n + 3) {
+    border-top: 0;
+}
+
+.features section:not(:nth-child(3n + 1)) {
+    border-left: solid 1px rgba(255, 255, 255, 0.15);
+}
+
+/* Stack skills on smaller screens */
+@media screen and (max-width: 736px) {
+    .features section {
+        width: 100%;
+    }
+
+    .features section:nth-child(n) {
+        border-left: 0;
+        border-top: solid 1px rgba(255, 255, 255, 0.15);
+    }
+
+    .features section:first-child {
+        border-top: 0;
+    }
+}
