@@ -34,8 +34,12 @@
 						<div class="inner">
 							<h1 class="major">A Generic Page</h1>
 							<span class="image fit"><img src="images/pic04.jpg" alt="" /></span>
-							<p>RANDOM PAGE1</p>
-							<p>LOL</p>
+							<p>Zeus is an offline voice assistant I built using Python and a Raspberry Pi 5. Inspired by assistants like Jarvis, I wanted to create a system that could listen, process questions, and respond without relying on cloud services, paid APIs, or a whole separate computer.</p>
+							<p>The hardware includes a Raspberry Pi 5 with 8 GB of RAM, a four-microphone USB array, and a speaker. I connected these components through a Python program that combines wake-word detection, speech recognition, response generation, and text-to-speech.</p>
+							<p>Zeus listens for its name using Vosk. Once activated, it records the user’s request and uses voice activity detection to determine when they have finished speaking. Faster-Whisper converts the recording into text, which is passed to Meta’s Llama 3.2 model running locally through Ollama. Piper then converts the model’s response into speech for playback through a speaker.</p>
+							<p>The biggest challenge was making the conversation feel responsive while running every stage on the Raspberry Pi. I measured delays throughout the voice detection process to adjust response streaming, and audio playback timing. I also troubleshot microphone connection issues and playback timing that caused the beginning of spoken responses to be cut off.</p>
+							<p>To make Zeus more practical, I configured it to launch automatically when the Raspberry Pi boots and run in the background. The system also includes local memory storage through text files, allowing information to remain on the device between sessions.</p>
+							<p>This project gave me hands on experience integrating hardware and software, running AI models on limited computing power, and troubleshooting a complete system. It brought several tools together into a working assistant that can carry out spoken conversations entirely offline.</p>
 						</div>
 					</section>
 
