@@ -3904,10 +3904,10 @@ input, select, textarea {
     #intro {
         background-attachment: scroll;
     }
+}
 
-    #research {
-        background-color: #141414;
-    }
+#research {
+    background-color: #1e1e1e;
 }
 
 /* Skills layout */
