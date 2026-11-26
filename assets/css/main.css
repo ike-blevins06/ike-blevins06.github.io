@@ -3976,7 +3976,7 @@ input, select, textarea {
 }
 
 .education-logo {
-    width: 200px;
+    width: 100px;
     height: auto;
     flex-shrink: 0;
     transform: scale(0.7);
